@@ -1,8 +1,16 @@
 {
   "manifest_version": 3,
   "name": "Reddit Anon View",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Remove the specified Reddit anonymous-browsing modal and body scroll lock.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{69123c5c-9a8b-402a-a3b8-efbc6cb4c509}",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
   "content_scripts": [
     {
       "matches": ["https://reddit.com/*", "https://www.reddit.com/*"],
