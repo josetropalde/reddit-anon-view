@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Anon View",
+  "version": "0.1.0",
+  "description": "Remove the specified Reddit anonymous-browsing modal and body scroll lock.",
+  "content_scripts": [
+    {
+      "matches": ["https://reddit.com/*", "https://www.reddit.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
